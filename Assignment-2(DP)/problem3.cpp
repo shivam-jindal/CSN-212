@@ -1,3 +1,8 @@
+/*
+ problem link = https://www.codechef.com/problems/D2/
+ solution on ideone = http://ideone.com/DNcpWX
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 

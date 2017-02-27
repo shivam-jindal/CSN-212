@@ -1,9 +1,12 @@
+/*
+ problem link = https://community.topcoder.com/stat?c=problem_statement&pm=1259
+ solution on ideone = http://ideone.com/xkr8HH
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
 int longestZigZag(int inputSequence[], int n)
 {
-
     int dp1[n], dp2[n];
     /*dp1[i] = Length of the longest Zig-Zag subsequence ending at index i and
       dp2[i]= Length of the longest Zig-Zag subsequence ending at index i and dp[i]<dp[i-1]
@@ -13,7 +16,6 @@ int longestZigZag(int inputSequence[], int n)
         dp1[i] = dp2[i] = 1;
 
     int answer = 1;
-
     for (int i = 1; i < n; i++)
     {
         for (int j = 0; j < i; j++)
@@ -31,7 +33,6 @@ int longestZigZag(int inputSequence[], int n)
         if (answer < max(dp1[i], dp2[i]))
             answer = max(dp1[i], dp2[i]);
     }
-
     return answer;
 }
 

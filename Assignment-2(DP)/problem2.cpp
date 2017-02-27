@@ -1,3 +1,8 @@
+/*
+ problem link = https://community.topcoder.com/stat?c=problem_statement&pm=1889
+ solution on ideone = http://ideone.com/1HeT1n
+*/
+
 #include <bits/stdc++.h>
 #include <vector>
 #include <string.h>
