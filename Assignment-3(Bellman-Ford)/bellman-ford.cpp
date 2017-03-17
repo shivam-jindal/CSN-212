@@ -1,3 +1,5 @@
+//Solution for a test case at Ideone : http://ideone.com/hzh9Lv
+
 #include <bits/stdc++.h>
 #include <ctime>
 using namespace std;
@@ -62,16 +64,16 @@ void BellmanFord(int V, int E, int src, Edge edgeList[]){
 }
 
 int main(){
-    int V,E;
+    int V, E;
     cin>> V >> E;
     Edge edges[E];
     for(int i=0; i<E; i++)
         cin>> edges[i].sourceVertex >> edges[i].destinationVertex >> edges[i].weight;
 
-	clock_t tStart = clock();
+    clock_t tStart = clock();
 
 	BellmanFord(V, E, 0, edges);
 
-	printf("Time taken: %.2fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
+	printf("Time taken: %.6fs\n", (double)(clock() - tStart)/CLOCKS_PER_SEC);
     return 0;
 }
